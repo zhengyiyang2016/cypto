@@ -3,6 +3,8 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 char word[6][6][6]={0};
 char add[32]={0};
+char redirect[150]={0};
+char pas[64]={0};
 int main(int argc, char** argv) {
 	return 0;
 }
@@ -95,14 +97,32 @@ void add(int turn)
     {  
 	for(j=1;j<=5;j++)
     {  
-    if()
-word[i][k][j]=word[i][k][j]+
-	
-	
-	}
+    word[i][k][i]=redirect[i*k*j+add[turn]];
 	
 	
 	}
 	
 	}
+}
+}
+void exchange(int turn)
+{
+	int i,k,j;
+	for(i=1;i<=5;i++)
+    {  
+	for(k=1;k<=5;k++)
+    {  
+	for(j=1;j<=5;j++)
+    {  
+   if(turn % 2==0)
+   {
+   	 word[i][k][i]= word[i][k][i]^pas[turn];
+   }
+	
+	
+	}
+	
+	}
+}	
+	
 }
